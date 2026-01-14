@@ -1,0 +1,149 @@
+You are a senior product engineer building a demo-only prototype for a B2B SaaS platform called “XtraSpec WealthOS”.
+
+GOAL:
+Build a frontend-only, demo-ready Wealth Manager Control Tower application for a wealth manager managing ~120 clients. This is a prototype for demonstration purposes only — no authentication, no backend, no real integrations.
+
+TECH STACK:
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- Mock data only (static JSON or in-file objects)
+- Clean, modern fintech UI (minimal, professional, executive-grade)
+
+SCOPE (DO NOT ADD MORE):
+Build ONLY the following 5 screens:
+
+1. CONTROL TOWER DASHBOARD (Home)
+2. CLIENT PROFILE VIEW
+3. ANNUAL REVIEW REPORT GENERATOR
+4. LIFE EVENT ALERTS CENTER
+5. COMPLIANCE / ACTIVITY LOG
+
+GENERAL REQUIREMENTS:
+- Desktop-first layout
+- Use a left sidebar for navigation
+- Use a top header with platform name: “XtraSpec WealthOS”
+- Use realistic placeholder data (120 clients, names, statuses)
+- Focus on clarity and storytelling, not completeness
+- No login, no permissions, no database, no APIs
+
+--------------------------------
+SCREEN DETAILS
+--------------------------------
+
+1. CONTROL TOWER DASHBOARD
+Purpose: Show a single-pane-of-glass view of a 120-client book of business.
+
+Include:
+- KPI cards:
+  - Total Clients: 120
+  - Annual Reviews Completed
+  - Annual Reviews Due
+  - High-Risk Clients
+  - Life Events Detected
+- Client Status Table:
+  Columns:
+    - Client Name
+    - Risk Level (Low / Medium / High)
+    - Review Status (Complete / Due / Overdue)
+    - Life Event Flag (Yes / No)
+- AI Task List (mocked):
+  Examples:
+    - “Prepare annual review for Client #34”
+    - “Review risk update due to new business registration”
+- Clicking a client navigates to CLIENT PROFILE VIEW
+
+--------------------------------
+
+2. CLIENT PROFILE VIEW
+Purpose: Show a complete snapshot of a single client.
+
+Include:
+- Client header:
+  - Name
+  - Net Worth
+  - Risk Profile
+  - Primary Goal
+- AI Client Snapshot (generated-style text block)
+- Life Events Section (timeline-style)
+- Portfolio Overview (simple pie or list — mocked)
+- Compliance Notes Section
+- Action Buttons:
+  - Generate Annual Review Report
+  - Draft Follow-Up Email
+  - Update Risk Profile
+
+--------------------------------
+
+3. ANNUAL REVIEW REPORT GENERATOR
+Purpose: Demonstrate AI-driven reporting.
+
+Include:
+- Toggles (checkboxes):
+  - Include Market Performance Summary
+  - Include Life Events Impact
+  - Include Risk Profile Update
+  - Include Compliance Language
+- Report Preview Panel:
+  - Executive Summary
+  - Portfolio Performance Summary
+  - Risk Assessment
+  - Life Event Impact
+  - Recommended Actions
+  - Compliance Notes
+- Button:
+  - “Generate Annual Review Report”
+- Report content should be realistic but static (mock AI output)
+
+--------------------------------
+
+4. LIFE EVENT ALERTS CENTER
+Purpose: Show proactive client monitoring.
+
+Include:
+- Filters:
+  - Marriage
+  - Divorce
+  - Business Formation
+  - Property Transaction
+  - Inheritance
+- Alerts List:
+  Each alert shows:
+    - Client Name
+    - Event Type
+    - Detection Source (Public Record / Client Update / Inferred)
+    - Date
+- Actions per alert:
+  - Add to Annual Review Agenda
+  - Update Risk Profile
+  - Draft Client Outreach
+
+--------------------------------
+
+5. COMPLIANCE / ACTIVITY LOG
+Purpose: Show audit readiness.
+
+Include:
+- Activity Table:
+  Columns:
+    - Client Name
+    - Activity Type (Meeting / Recommendation / Document Upload)
+    - Date
+    - Status
+- Compliance Alerts Panel:
+  Example:
+    - “3 clients missing annual review documentation”
+- Document placeholders (no uploads)
+
+--------------------------------
+
+DESIGN GUIDELINES:
+- Neutral fintech color palette (slate, gray, white, subtle accent)
+- Use cards, tables, and clean typography
+- Avoid flashy animations
+- Use realistic language and labels
+- Everything should look believable to a Deloitte consultant and a wealth manager
+
+FINAL NOTE:
+This is a DEMO, not a production system.
+Optimize for clarity, realism, and narrative flow.
