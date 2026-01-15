@@ -9,16 +9,17 @@ import {
   Settings
 } from "lucide-react";
 
+export const navItems = [
+  { label: "Dashboard", href: "/", icon: LayoutDashboard },
+  { label: "Clients", href: "/clients", icon: Users },
+  { label: "Reports", href: "/reports", icon: FileText },
+  { label: "Alerts", href: "/alerts", icon: Bell },
+  { label: "Compliance", href: "/compliance", icon: ShieldCheck },
+];
+
 export function Sidebar() {
   const [location] = useLocation();
 
-  const navItems = [
-    { label: "Dashboard", href: "/", icon: LayoutDashboard },
-    { label: "Clients", href: "/clients", icon: Users },
-    { label: "Reports", href: "/reports", icon: FileText },
-    { label: "Alerts", href: "/alerts", icon: Bell },
-    { label: "Compliance", href: "/compliance", icon: ShieldCheck },
-  ];
 
   return (
     <aside className="hidden lg:flex flex-col w-64 h-screen sticky top-0 bg-card border-r border-border/40 shadow-sm z-50">

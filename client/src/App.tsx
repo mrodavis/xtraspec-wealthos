@@ -4,6 +4,8 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "./components/MobileNav";
+
 
 import Dashboard from "@/pages/Dashboard";
 import ClientProfile from "@/pages/ClientProfile";
@@ -17,6 +19,11 @@ function Router() {
   return (
     <div className="flex min-h-screen bg-gray-50/50 font-sans">
       <Sidebar />
+
+      <div className="flex-1 flex flex-col">
+        {/* ✅ Mobile hamburger / top bar */}
+        <MobileNav />
+
       <main className="flex-1 lg:ml-0 p-4 md:p-8 overflow-y-auto">
         <div className="max-w-7xl mx-auto pb-12">
           <Switch>
@@ -31,6 +38,7 @@ function Router() {
         </div>
       </main>
     </div>
+   </div>
   );
 }
 
